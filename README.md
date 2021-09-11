@@ -14,7 +14,9 @@ https://github.com/lop19029/ClientRoomsFrontEnd
 Start the spring application by running the `mavenw` binary with the command `./mavenw spring-boot:run`. 
 
 Since we don't have an interface yet, use the `curl` command to add some some records in the h2 database.
-`curl -H "Content-Type: application/json" -d '{ "name": "Digital Innovation One", "date": "10/09/2021", "startHour": "19hs", "endHour": "21hs" }' http://localhost:8082/api/v1/rooms | json_pp`
+```bash
+curl -H "Content-Type: application/json" -d '{ "name": "Digital Innovation One", "date": "10/09/2021", "startHour": "19hs", "endHour": "21hs" }' http://localhost:8082/api/v1/rooms | json_pp
+```
 
 Run the command `curl http://localhost:8082/api/v1/rooms | json_pp` to check your room.
 
